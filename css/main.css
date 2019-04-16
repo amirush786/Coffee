@@ -1,0 +1,221 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: monospace;
+      font-size: 100%;
+      line-height: 1.5em;
+      background-color: wheat;
+      
+    }
+
+  .clearfix:before,.clearfix:after {
+  content: "";
+  display: table;
+  }
+
+    .clearfix:after {
+  clear: both;
+  }
+
+    h1 {
+  font-size: 3em;
+  }
+
+    h2 {
+   font-size: 2em;
+   line-height: 0.9em;
+   text-transform: uppercase;
+   padding: 0.5em;
+  }
+    
+    nav ul {      font-family: cursive;
+    }
+    
+    nav ul li,div.button {
+      display: block;
+      width: 100%;
+      background-color: #555555;
+      text-align: center;
+      font-size: 1.2em;
+    }
+    
+    div.button {
+      height: 4em;
+      background-color: red;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: red;
+      display: block;
+      height: 3em;
+      font-family: cursive;
+    }
+    
+    nav ul li a:hover:not(.active){
+      border: 2px solid black;
+      border-radius: 0.5em;
+      color: chocolate;
+    }
+    
+    .active {
+      color: black;
+      border: 0.2em solid chocolate;
+      border-radius: 0.5em;
+    }
+    
+    header {
+      margin: 0;
+      background-image: url(/Images/Food/coffee.jpg);
+      padding: 3em;
+      text-align: center;
+      border-bottom:0.5em solid chocolate;
+      color: whitesmoke;
+    }
+    
+    header h1 {
+      font-size: 8em;
+      padding-top: 0.5em;
+      margin-bottom: 0.75em;
+      color: chocolate;
+      font-family: cursive;
+    }
+    
+    header p {
+      text-align: center;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      font-size: 3em;
+      line-height: 1.2em;
+      color: chocolate;
+      font-family: cursive;
+    }
+    
+    a.btn {
+      display: inline-block;
+      text-transform: uppercase;
+      background-color: chocolate;
+      color: black;
+      margin: 1em;
+      padding: 2em;
+      text-decoration: none;
+      border-radius: 2em;
+      font-family: cursive;
+    }
+    
+    a.btn:hover{
+      background-color: black;
+      color: whitesmoke;
+    }
+
+    blockquote {
+      padding: 1em;
+      background-color: darkkhaki;
+      font-size: 2em;
+      line-height: 1.2em;
+      text-align: center;
+     font-family: cursive;
+    }
+
+    .titles {
+	  padding: 1em;
+      line-height: 3em;
+      text-align: center;
+      text-transform: capitalize;
+      background-color: saddlebrown;
+    }
+
+    .articles {
+	   margin: 2em;
+       
+    }
+    
+    .articles section {
+	text-align: center;  
+    }
+
+    .articles section p {
+	text-align: justify;
+      line-height: 2em;
+    }
+
+    .articles section img {
+      width: 100%;
+      border-radius: 5px;
+      }
+
+.red {
+  color: red;
+  line-height: 1.2em;
+  font-family: cursive
+}  
+
+.black {
+	color: black;
+}
+
+.titles h1 {
+	font-family: cursive;
+  color: red;
+}
+  footer#second {
+  padding: 2em;
+  text-align: center;
+  color: red;
+  background-color: chocolate;
+  text-transform: uppercase;
+  line-height: 3em;
+  text-shadow: 0.2em 0.2em black;
+  border-radius: 0.5em;
+  font-family: cursive;
+  }
+
+    @media screen and (min-width:600px){
+      nav ul li{
+        display: inline-block;
+        width: 8em;
+      }
+      nav {
+        background-color: #555555;
+      }
+      
+      .articles section {
+	   float: left;
+        width: 31.428571428%;
+        margin-right: 2.857142857%;
+      }
+      
+      .articles section:last-child{
+        margin-right: 0;
+      }
+      
+      .articles section img {
+        height: 26em;
+      }
+      
+      .articles section p {
+        height: 22em;
+        overflow: hidden;
+      }
+      
+    }
+
+@media screen and (min-width:200px) {
+  .small section:last-child{
+	margin-right: 0;
+}
+  
+  .small section {
+        float: left;
+        width: 31.428571428%;
+        margin-right: 2.857142857%;
+  }
+  
+  .small section h2 {
+    font-size: 1.5em;
+  }
+}
